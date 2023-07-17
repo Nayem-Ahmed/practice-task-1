@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+main,footer{
+    max-width: 1440px;
+   
+}
+body,p,h1,h2,h3,h4,h5,h6,span{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color:#FFF;
+    padding: 3rem 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+nav ul li{}
+nav ul li a{
+    text-decoration: none;
+    margin-right: 1rem;
+    color: #3A3A3A;
+}
+nav ul li a:hover{}
+
+.banner-section{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 7.80rem;
+}
+.banner-section p{
+    color: #3A3A3A;
+    margin: .50rem 0;
+}
+.primary-button{
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+}
+.banner-right-img {
+    background-image: url();
+}
+
+.banner-right-img img{
+    width: 50%;   
+}
+.banner-bottom-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem .50rem;
+    flex-wrap:wrap;
+}
+.banner-bottom-section img{
+    width: 8%;
+}
+.popular-section{
+    background-color: #ffffff;
+    padding: 3rem .60rem;
+}
+.popular-text{
+    text-align: center;
+}
+.popular-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 5px;
+    margin-top: 2rem;
+    justify-content: space-around;
+    grid-row-gap: 2rem;
+    flex-wrap: wrap;
+
+}
+.popular-cads-items{
+    width: 250px;
+    height: 300px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: .60rem;
+
+}
+.popular-cads-items img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Mobile */
+@media screen and (max-width:578px){
+    .banner-bottom-section,
+    nav{
+        flex-direction: column;
+    }
+    .nav-text h2{
+        margin-bottom: .60rem;
+    }
+    .banner-section {
+        align-items: stretch;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-left: 0;
+        text-align: center;
+        padding: .50rem;
+    }
+    .banner-right-img {
+        text-align: center;
+    }
+    .banner-bottom-section img{
+        width: 25%;
+        margin-bottom: 2.25rem;
+    }
+    .popular-card{
+        grid-template-columns: 1fr;
+    }
+    
+}
